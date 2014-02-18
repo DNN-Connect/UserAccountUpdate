@@ -1,0 +1,57 @@
+
+                    <div class="pBio">
+						<h3 data-bind="text: 'Me'"></h3>
+						<span data-bind="text: EmptyAboutMeText, visible: Biography().length==0"></span>
+						<p data-bind="html: Biography"></p>
+                    </div>
+
+                    <div class="pAddress">
+						<h3 data-bind="text: 'Me on the map'"></h3>
+						<span data-bind="text: EmptyLocationText, visible: Street().length=0 && City().length==0 && Country().length==0 && PostalCode().length==0"></span>
+						<p>							
+							<span data-bind="visible: City().length > 0, text: PostalCode()"></span><span data-bind="visible: City().length > 0 && PostalCode().length > 0"> - </span><span data-bind="text: City()"></span>
+							<span data-bind="visible: Street().length > 0"><br/></span><span data-bind="text: Street()"></span>
+							<span data-bind="visible: Country().length > 0"><br/></span><span data-bind="text: Country()"></span>
+							
+						</p>
+                    </div>
+
+                    <div class="pContact">
+						<h3 data-bind="text: 'Me on the web'"></h3>
+						<span data-bind="text: 'Soryy. I am not on the web...', visible: Telephone().length==0 && Email().length==0 && Website().length==0 && Skype().length==0 && Twitter().length==0 && Facebook().length==0 && Google().length==0 && LinkedIn().length==0"></span>
+						<ul>
+							<li class="getintouchlink website" data-bind="visible: Website().length > 0"><strong><span data-bind="text: WebsiteText">:</span></strong> <a data-bind="attr: { href: Website(), title: Website() }" target="_blank"><span data-bind="text: Website()"></span></a></li>
+							<li class="getintouchlink google" data-bind="visible: Google().length > 0"><strong><span data-bind="text: GoogleText">:</span></strong> <a data-bind="attr: { href: Google(), title: Google() }" target="_blank"><span data-bind="text: Google()"></span></a></li>
+							<li class="getintouchlink skype" data-bind="visible: Skype().length > 0"><strong><span data-bind="text: SkypeText">:</span></strong> <a data-bind="attr: { href: Skype(), title: Skype() }" target="_blank"><span data-bind="text: Skype()"></span></a></li>
+							<li class="getintouchlink facebook" data-bind="visible: Facebook().length > 0"><strong><span data-bind="text: FacebookText">:</span></strong> <a data-bind="attr: { href: Facebook(), title: Facebook() }" target="_blank"><span data-bind="text: Facebook()"></span></a></li>
+							<li class="getintouchlink twitter" data-bind="visible: Twitter().length > 0"><strong><span data-bind="text: TwitterText">:</span></strong> <a data-bind="attr: { href: Twitter(), title: Twitter() }" target="_blank"><span data-bind="text: Twitter()"></span></a></li>
+							<li class="getintouchlink linkedin" data-bind="visible: LinkedIn().length > 0"><strong><span data-bind="text: LinkedInText">:</span></strong> <a data-bind="attr: { href: LinkedIn(), title: LinkedIn() }" target="_blank"><span data-bind="text: LinkedIn()"></span></a></li>
+						</ul>
+                    </div>
+
+                    <div class="pContact">
+						<h3 data-bind="text: 'Wanna get in touch?'"></h3>
+						<span data-bind="text: 'Sorry. I am not available...', visible: Telephone().length==0 && Email().length==0 && Cell().length==0"></span>
+						<ul>
+							<li class="getintouchlink email" data-bind="visible: Email().length > 0"><strong><span data-bind="text: EmailText">:</span></strong> <a data-bind="attr: { href: 'mailto:' + Email() }" target="_blank"><span data-bind="text: Email()"></span></a></li>
+							<li class="getintouchlink telephone" data-bind="visible: Telephone().length > 0"><strong><span data-bind="text: TelephoneText">:</span></strong> <span data-bind="text: Telephone()"></span></li>
+							<li class="getintouchlink cell" data-bind="visible: Cell().length > 0"><strong><span data-bind="text: CellText">:</span></strong> <span data-bind="text: Cell()"></span></li>																					
+						</ul>
+                    </div>
+
+                    <div class="dnnClear"></div>
+                  
+
+<div class="GroupViewTop">
+	<div class="dgdAvatar dnnLeft"><img src="[groupitem:PhotoURL]" alt="German"></div>
+	<div class="GroupViewHeader">
+        <h1>[groupitem:GroupName]</h1>
+        <p>[groupitem:GroupDescription]</p>
+		<p>
+			[IsMember]<a href="#" title="" class="dnnPrimaryAction" id="LeaveGroup-[groupitem:RoleId]" groupid="[groupitem:RoleId]" groupViewTabId ="[GroupViewTabId]">{resx:LeaveGroup}</a>[/IsMember]
+			[IsNotMember]<a href="#" title="" class="dnnPrimaryAction" id="JoinGroup-[groupitem:RoleId]" groupid="[groupitem:RoleId]" groupViewTabId ="[GroupViewTabId]">{resx:JoinGroup}</a>[/IsNotMember]
+			[IsPendingMember]<a href="#" title="" class="dnnDisabled">{resx:Pending}</a></li>[/IsPendingMember]
+			[IsOwner]&nbsp;[GROUPEDITBUTTON][/IsOwner] 
+		</p>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+﻿/* more real estate for template editing */
+#ConnectAccountUpdateTemplates .dnnFormItem textarea        {max-width: inherit;width: 100%;}
+
+/* float input controls in order to make the required indicators align correctly */
+.connect_accountform input                                  {float:left;}
+.connect_accountform span.value                             {float:left; display: block; font-weight: bold; padding: 0 0 10px 10px;}
+/* messages on top of the form */
+.connect_accountform .dnnFormMessage ul li                  {list-style-type: none; }
+.connect_accountform .dnnFormMessage.dnnFormError li        {background: url(images/error.png) left 6px no-repeat;padding: 5px 0 5px 30px; line-height: 20px;}
+.connect_accountform .dnnFormMessage.dnnFormSuccess li      {background: url(images/success.png) left 6px no-repeat;padding: 5px 0 5px 30px; line-height: 20px;}
+
+/* required indicators in form */
+.connect_accountform .connect_required                      {background: url(images/required.png) 10px center no-repeat; width: 30px; height: 32px; float:left;}
+.connect_accountform .connect_success                       {background: url(images/success.png) 10px center no-repeat; width: 30px; height: 32px; float:left;}
+.connect_accountform .connect_error                         {background: url(images/error.png) 10px center no-repeat; width: 30px; height: 32px; float:left;}
+
+.dnnFormItem select.ctlProfileVisibility {
+    width: 10%;
+    margin-left: 10px;
+    padding: 7px;
+}

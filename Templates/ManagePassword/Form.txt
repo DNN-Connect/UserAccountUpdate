@@ -1,0 +1,27 @@
+
+<div class="dnnForm dnnClear">
+
+	<div class="dnnFormItem dnnClear">
+		[DNNLBL:USER:PasswordCurrent:HideRequired]
+		[CTL:USER:PasswordCurrent]
+		[REQUIRED:USER:PasswordCurrent]
+	</div>
+	
+	<div class="dnnFormItem dnnClear">
+		[DNNLBL:USER:Password1:HideRequired]
+		[CTL:USER:Password1]
+		[REQUIRED:USER:Password1]
+	</div>
+
+	<div class="dnnFormItem dnnClear">
+		[DNNLBL:USER:Password2:HideRequired]
+		[CTL:USER:Password2]
+		[REQUIRED:USER:Password2]
+	</div>
+
+	<ul class="dnnActions">
+	  <li>[CTL:UPDATEBUTTON:UpdateAccount]</li>
+	  <li>[CTL:DELETEBUTTON:DeleteAccount]</li>
+	</ul>
+
+</div>
