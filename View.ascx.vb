@@ -440,6 +440,22 @@ Namespace Connect.Modules.UserManagement.AccountUpdate
             lblSucess.Text = "<ul><li>" & Localization.GetString("AccountUpdateSuccess.Text", LocalResourceFile) & "</li></ul>"
             pnlSuccess.Visible = True
 
+            If ExternalInterface <> Null.NullInteger Then
+
+                Dim objInterface As Object = Nothing
+
+                If ExternalInterface.Contains(",") Then
+                    Dim strAssembly As String = ExternalInterface.Split(Char.Parse(","))(0).Trim
+                    Dim strClass As String = ExternalInterface.Split(Char.Parse(","))(1).Trim
+                    objInterface = System.Activator.CreateInstance(strAssembly, strClass).Unwrap
+                End If
+
+                If Not objInterface Is Nothing Then
+                    CType(objInterface, Interfaces.iAccountUpdate).FinalizeAccountUpdate(Server, Response, Request, oUser)
+                End If
+
+            End If
+
             If Not Request.QueryString("ReturnURL") Is Nothing Then
                 Response.Redirect(Server.UrlDecode(Request.QueryString("ReturnURL")), True)
             End If
