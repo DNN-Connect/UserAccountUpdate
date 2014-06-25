@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ControlTitle_settings.Text" xml:space="preserve">
-    <value>Registration Settings</value>
+    <value>Account Update Settings</value>
   </data>
   <data name="lblUsernameMode.Text" xml:space="preserve">
     <value>Username Mode:</value>
@@ -130,28 +130,28 @@
     <value>Let the user select</value>
   </data>
   <data name="Username_UseEmail.Text" xml:space="preserve">
-    <value>Create from E-Mail Address</value>
+    <value>Strore from E-Mail Address</value>
   </data>
   <data name="Username_FirstletterLastname.Text" xml:space="preserve">
-    <value>Create in the form [Firstletter from Firstname + .Lastname]</value>
+    <value>Strore in the form [Firstletter from Firstname + .Lastname]</value>
   </data>
   <data name="Displayname_FirstletterLastname" xml:space="preserve">
-    <value>Create in the form [Firstletter from Firstname + .Lastname]</value>
+    <value>Strore in the form [Firstletter from Firstname + .Lastname]</value>
   </data>
   <data name="Displayname_FirstnameLastname" xml:space="preserve">
-    <value>Create in the form [Firstname.Lastname]</value>
+    <value>Strore in the form [Firstname.Lastname]</value>
   </data>
   <data name="Displayname_FreeEnter.Text" xml:space="preserve">
     <value>Let the user select</value>
   </data>
   <data name="Displayname_FromEmail" xml:space="preserve">
-    <value>Create from E-Mail Address</value>
+    <value>Strore from E-Mail Address</value>
   </data>
   <data name="Displayname_Lastname" xml:space="preserve">
-    <value>Create from Lastname</value>
+    <value>Strore from Lastname</value>
   </data>
   <data name="lblAddToRole.Help" xml:space="preserve">
-    <value>You may optionally select a role that the user is being added to once registering through this module instance</value>
+    <value>You may optionally select a role that the user is being added to once updating its profile through this module instance</value>
   </data>
   <data name="lblAddToRole.Text" xml:space="preserve">
     <value>Add to Role on Submit:</value>
@@ -187,15 +187,33 @@
     <value>Usermanagement Page:</value>
   </data>
   <data name="Username_FirstnameLastname" xml:space="preserve">
-    <value>Create in the form [Firstname.Lastname]</value>
+    <value>Strore in the form [Firstname.Lastname]</value>
   </data>
   <data name="Username_Lastname" xml:space="preserve">
-    <value>Create from Lastname</value>
+    <value>Strore from Lastname</value>
   </data>
   <data name="lblInterface.Help" xml:space="preserve">
     <value>Enter the external interface qualifier. See &lt;a href="https://github.com/DNN-Connect/UserAccountUpdate/wiki/External-Interfaces" target="_blank"&gt;this article&lt;/a&gt; on how to do that and how it can help you.</value>
   </data>
   <data name="lblInterface.Text" xml:space="preserve">
     <value>External Interface</value>
+  </data>
+  <data name="lblRemoveFromRole.Help" xml:space="preserve">
+    <value>You may optionally select a role that the user is being removed from once updating its profile through this module instance</value>
+  </data>
+  <data name="lblRemoveFromRole.Text" xml:space="preserve">
+    <value>Remove from Role</value>
+  </data>
+  <data name="lblAddToRoleStatus.Help" xml:space="preserve">
+    <value>Select the status of the role membership after submitting the form</value>
+  </data>
+  <data name="lblAddToRoleStatus.Text" xml:space="preserve">
+    <value>Role status after submit:</value>
+  </data>
+  <data name="StatusApproved.Text" xml:space="preserve">
+    <value>Approved</value>
+  </data>
+  <data name="StatusPending.Text" xml:space="preserve">
+    <value>Pending</value>
   </data>
 </root>

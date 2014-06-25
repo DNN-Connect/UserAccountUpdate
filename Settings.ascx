@@ -41,6 +41,14 @@
 </div>
 
 <div class="dnnFormItem">
+     <dnn:Label ID="lblAddToRoleStatus" runat="server" Text="Role status once submitted:"></dnn:Label>
+     <asp:DropDownList ID="drpRoleStatus" runat="server">
+         <asp:ListItem Text="Pending" Value="Pending"></asp:ListItem>
+         <asp:ListItem Text="Approved" Value="Approved"></asp:ListItem>
+     </asp:DropDownList>
+</div>
+
+<div class="dnnFormItem">
      <dnn:Label ID="lblRemoveFromRole" runat="server" Text="Add to role on submit:"></dnn:Label>
      <asp:DropDownList ID="drpRemoveFromRole" runat="server" DataTextField="RoleName" DataValueField="RoleId"></asp:DropDownList>
 </div>

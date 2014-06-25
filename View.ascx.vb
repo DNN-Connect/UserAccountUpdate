@@ -357,7 +357,12 @@ Namespace Connect.Modules.UserManagement.AccountUpdate
             If AddToRoleOnSubmit <> Null.NullInteger Then
                 Try
                     Dim rc As New RoleController
-                    rc.AddUserRole(PortalId, oUser.UserID, AddToRoleOnSubmit, Null.NullDate)
+
+                    If AddToRoleStatus.ToLower = "pending" Then
+                        rc.AddUserRole(PortalId, oUser.UserID, AddToRoleOnSubmit, RoleStatus.Pending, False, Date.Now, Null.NullDate)
+                    Else
+                        rc.AddUserRole(PortalId, oUser.UserID, AddToRoleOnSubmit, RoleStatus.Approved, False, Date.Now, Null.NullDate)
+                    End If
                 Catch
                 End Try
             End If
@@ -371,6 +376,32 @@ Namespace Connect.Modules.UserManagement.AccountUpdate
                     RoleController.DeleteUserRole(oUser, r, PortalSettings, False)
                 Catch
                 End Try
+            End If
+
+            Dim chkTest As CheckBox = CType(FindMembershipControlsRecursive(plhProfile, plhProfile.ID & "_" & Constants.ControlId_RoleMembership), CheckBox)
+            If Not chkTest Is Nothing Then
+                'at least on role membership checkbox found. Now lookup roles that could match
+                Dim rc As New RoleController
+                Dim roles As ArrayList
+                roles = rc.GetPortalRoles(PortalId)
+                For Each objRole As RoleInfo In roles
+
+                    Dim blnPending As Boolean = False
+                    Dim chkRole As CheckBox = CType(FindControlRecursive(plhProfile, plhProfile.ID & "_" & Constants.ControlId_RoleMembership & objRole.RoleName.Replace(" ", "")), CheckBox)
+                    If chkRole Is Nothing Then
+                        chkRole = CType(FindControlRecursive(plhProfile, plhProfile.ID & "_" & Constants.ControlId_RoleMembership & objRole.RoleName.Replace(" ", "") & "_Pending"), CheckBox)
+                        blnPending = True
+                    End If
+
+                    If Not chkRole Is Nothing Then
+                        If blnPending Then
+                            rc.AddUserRole(PortalId, oUser.UserID, objRole.RoleID, RoleStatus.Pending, False, Date.Now, Null.NullDate)
+                        Else
+                            rc.AddUserRole(PortalId, oUser.UserID, objRole.RoleID, RoleStatus.Approved, False, Date.Now, Null.NullDate)
+                        End If
+                    End If
+
+                Next
             End If
 
             'notify admin   
@@ -390,7 +421,7 @@ Namespace Connect.Modules.UserManagement.AccountUpdate
                 strBody = strBody.Replace("[FIRSTNAME]", oUser.FirstName)
                 strBody = strBody.Replace("[LASTNAME]", oUser.LastName)
                 strBody = strBody.Replace("[UPDATED]", strUpdated.Substring(0, strUpdated.LastIndexOf(",")).Replace(":", ""))
-                strBody = strBody.Replace("[USERURL]", NavigateURL(UsermanagementTab, "", "uid=" & oUser.UserID.ToString))
+                strBody = strBody.Replace("[USERURL]", NavigateURL(UsermanagementTab, "", "uid=" & oUser.UserID.ToString, "RoleId=" & PortalSettings.RegisteredRoleId.ToString))
 
                 strBody = strBody.Replace("[RECIPIENTUSERID]", oUser.UserID.ToString)
                 strBody = strBody.Replace("[USERID]", oUser.UserID.ToString)
@@ -440,7 +471,7 @@ Namespace Connect.Modules.UserManagement.AccountUpdate
             lblSucess.Text = "<ul><li>" & Localization.GetString("AccountUpdateSuccess.Text", LocalResourceFile) & "</li></ul>"
             pnlSuccess.Visible = True
 
-            If ExternalInterface <> Null.NullInteger Then
+            If ExternalInterface <> Null.NullString Then
 
                 Dim objInterface As Object = Nothing
 

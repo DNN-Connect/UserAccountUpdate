@@ -6,135 +6,7 @@ Connect.Modules.AccountUpdate
 </name>
 </assembly>
 <members>
-<member name="F:Connect.Modules.UserManagement.AccountUpdate.Settings.lblUsernameMode">
-	<summary>
-lblUsernameMode control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Connect.Modules.UserManagement.AccountUpdate.Settings.drpUsernameMode">
-	<summary>
-drpUsernameMode control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Connect.Modules.UserManagement.AccountUpdate.Settings.lblDisplaynameMode">
-	<summary>
-lblDisplaynameMode control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Connect.Modules.UserManagement.AccountUpdate.Settings.drpDisplaynameMode">
-	<summary>
-drpDisplaynameMode control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Connect.Modules.UserManagement.AccountUpdate.Settings.lblRedirectAfterSubmit">
-	<summary>
-lblRedirectAfterSubmit control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Connect.Modules.UserManagement.AccountUpdate.Settings.drpRedirectAfterSubmit">
-	<summary>
-drpRedirectAfterSubmit control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Connect.Modules.UserManagement.AccountUpdate.Settings.lblUsermanagementTab">
-	<summary>
-lblUsermanagementTab control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Connect.Modules.UserManagement.AccountUpdate.Settings.drpUserManagementTab">
-	<summary>
-drpUserManagementTab control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Connect.Modules.UserManagement.AccountUpdate.Settings.lblAddToRole">
-	<summary>
-lblAddToRole control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Connect.Modules.UserManagement.AccountUpdate.Settings.drpAddToRole">
-	<summary>
-drpAddToRole control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Connect.Modules.UserManagement.AccountUpdate.Settings.lblRemoveFromRole">
-	<summary>
-lblRemoveFromRole control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Connect.Modules.UserManagement.AccountUpdate.Settings.drpRemoveFromRole">
-	<summary>
-drpRemoveFromRole control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Connect.Modules.UserManagement.AccountUpdate.Settings.lblNotifyRole">
-	<summary>
-lblNotifyRole control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Connect.Modules.UserManagement.AccountUpdate.Settings.drpNotifyRole">
-	<summary>
-drpNotifyRole control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Connect.Modules.UserManagement.AccountUpdate.Settings.lblNotifyUser">
-	<summary>
-lblNotifyUser control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Connect.Modules.UserManagement.AccountUpdate.Settings.chkNotifyUser">
-	<summary>
-chkNotifyUser control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Connect.Modules.UserManagement.AccountUpdate.Templates.plTheme">
+<member name="F:Connect.Modules.UserManagement.AccountUpdate.Templates.plTheme">
 	<summary>
 plTheme control.
 </summary>
@@ -297,6 +169,166 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:Connect.Modules.UserManagement.AccountUpdate.Templates.cmdCancel">
 	<summary>
 cmdCancel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Connect.Modules.UserManagement.AccountUpdate.Settings.lblUsernameMode">
+	<summary>
+lblUsernameMode control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Connect.Modules.UserManagement.AccountUpdate.Settings.drpUsernameMode">
+	<summary>
+drpUsernameMode control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Connect.Modules.UserManagement.AccountUpdate.Settings.lblDisplaynameMode">
+	<summary>
+lblDisplaynameMode control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Connect.Modules.UserManagement.AccountUpdate.Settings.drpDisplaynameMode">
+	<summary>
+drpDisplaynameMode control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Connect.Modules.UserManagement.AccountUpdate.Settings.lblRedirectAfterSubmit">
+	<summary>
+lblRedirectAfterSubmit control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Connect.Modules.UserManagement.AccountUpdate.Settings.drpRedirectAfterSubmit">
+	<summary>
+drpRedirectAfterSubmit control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Connect.Modules.UserManagement.AccountUpdate.Settings.lblUsermanagementTab">
+	<summary>
+lblUsermanagementTab control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Connect.Modules.UserManagement.AccountUpdate.Settings.drpUserManagementTab">
+	<summary>
+drpUserManagementTab control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Connect.Modules.UserManagement.AccountUpdate.Settings.lblAddToRole">
+	<summary>
+lblAddToRole control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Connect.Modules.UserManagement.AccountUpdate.Settings.drpAddToRole">
+	<summary>
+drpAddToRole control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Connect.Modules.UserManagement.AccountUpdate.Settings.lblAddToRoleStatus">
+	<summary>
+lblAddToRoleStatus control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Connect.Modules.UserManagement.AccountUpdate.Settings.drpRoleStatus">
+	<summary>
+drpRoleStatus control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Connect.Modules.UserManagement.AccountUpdate.Settings.lblRemoveFromRole">
+	<summary>
+lblRemoveFromRole control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Connect.Modules.UserManagement.AccountUpdate.Settings.drpRemoveFromRole">
+	<summary>
+drpRemoveFromRole control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Connect.Modules.UserManagement.AccountUpdate.Settings.lblNotifyRole">
+	<summary>
+lblNotifyRole control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Connect.Modules.UserManagement.AccountUpdate.Settings.drpNotifyRole">
+	<summary>
+drpNotifyRole control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Connect.Modules.UserManagement.AccountUpdate.Settings.lblNotifyUser">
+	<summary>
+lblNotifyUser control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Connect.Modules.UserManagement.AccountUpdate.Settings.chkNotifyUser">
+	<summary>
+chkNotifyUser control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Connect.Modules.UserManagement.AccountUpdate.Settings.lblInterface">
+	<summary>
+lblInterface control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Connect.Modules.UserManagement.AccountUpdate.Settings.txtInterface">
+	<summary>
+txtInterface control.
 </summary>
 	<remarks>
 Auto-generated field.

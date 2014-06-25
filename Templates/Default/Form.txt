@@ -1,4 +1,19 @@
 
+<p>
+[IFSOCIALMEMBERSHIPPENDING:Association Member]
+Hello pending member
+[/IFSOCIALMEMBERSHIPPENDING:Association Member]
+
+[IFSOCIALMEMBERSHIPAPPROVED:Association Member]
+Hello approved member
+[/IFSOCIALMEMBERSHIPAPPROVED:Association Member]
+
+[IFSOCIALMEMBERSHIPNONE:Association Member]
+Hello non-member
+[/IFSOCIALMEMBERSHIPNONE:Association Member]
+
+</p>
+
 <div class="dnnForm dnnClear">
 	
 	<div class="dnnFormItem dnnClear">

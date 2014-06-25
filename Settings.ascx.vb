@@ -25,6 +25,7 @@ Namespace Connect.Modules.UserManagement.AccountUpdate
                     If (Settings.Contains("RemoveFromRoleOnSubmit")) Then drpRemoveFromRole.SelectedValue = Settings("RemoveFromRoleOnSubmit").ToString()
                     If (Settings.Contains("NotifyRole")) Then drpNotifyRole.Items.FindByText(Settings("NotifyRole").ToString()).Selected = True
                     If (Settings.Contains("NotifyUser")) Then chkNotifyUser.Checked = CType(Settings("NotifyUser"), Boolean)
+                    If (Settings.Contains("AddToRoleStatus")) Then drpRoleStatus.SelectedValue = CType(Settings("AddToRoleStatus"), String)
 
                 End If
             Catch exc As Exception           'Module failed to load
@@ -46,6 +47,7 @@ Namespace Connect.Modules.UserManagement.AccountUpdate
                 'we need the rolename for sending mails to users, therefor store here the rolename rather than the id!
                 objModules.UpdateTabModuleSetting(TabModuleId, "NotifyRole", drpNotifyRole.SelectedItem.Text)
                 objModules.UpdateTabModuleSetting(TabModuleId, "NotifyUser", chkNotifyUser.Checked.ToString)
+                objModules.UpdateTabModuleSetting(TabModuleId, "AddToRoleStatus", drpRoleStatus.SelectedValue)
 
             Catch exc As Exception           'Module failed to load
                 ProcessModuleLoadException(Me, exc)
