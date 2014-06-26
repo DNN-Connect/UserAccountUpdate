@@ -46,7 +46,7 @@ Namespace Connect.Modules.UserManagement.AccountUpdate
             BindSelectedTheme()
         End Sub
 
-        Private Sub cmdUpdateSettings_Click(sender As Object, e As System.EventArgs) Handles cmdUpdateSettings.Click
+        Private Sub cmdUpdate_Click(sender As Object, e As System.EventArgs) Handles cmdUpdate.Click
 
             Dim blnSucess As Boolean = False
 
@@ -55,6 +55,20 @@ Namespace Connect.Modules.UserManagement.AccountUpdate
             If blnSucess Then
                 UpdateSettings()
             End If
+
+        End Sub
+
+        Private Sub cmdUpdateExit_Click(sender As Object, e As System.EventArgs) Handles cmdUpdateExit.Click
+
+            Dim blnSucess As Boolean = False
+
+            SaveTemplates(blnSucess)
+
+            If blnSucess Then
+                UpdateSettings()
+            End If
+
+            Response.Redirect(NavigateURL(TabId))
 
         End Sub
 
@@ -97,7 +111,8 @@ Namespace Connect.Modules.UserManagement.AccountUpdate
         Private Sub LocalizeForm()
 
             cmdCancel.Text = Localization.GetString("cmdCancel", LocalResourceFile)
-            cmdUpdateSettings.Text = Localization.GetString("cmdUpdateSettings", LocalResourceFile)
+            cmdUpdate.Text = Localization.GetString("cmdUpdate", LocalResourceFile)
+            cmdUpdateExit.Text = Localization.GetString("cmdUpdateExit", LocalResourceFile)
             cmdCopySelected.Text = Localization.GetString("cmdCopySelected", LocalResourceFile)
             cmdDeleteSelected.Text = Localization.GetString("cmdDeleteSelected", LocalResourceFile)
 

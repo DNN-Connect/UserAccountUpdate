@@ -186,13 +186,22 @@ Namespace Connect.Modules.UserManagement.AccountUpdate
         Protected WithEvents txtEmailAdmin As Global.System.Web.UI.WebControls.TextBox
 
         '''<summary>
-        '''cmdUpdateSettings control.
+        '''cmdUpdate control.
         '''</summary>
         '''<remarks>
         '''Auto-generated field.
         '''To modify move field declaration from designer file to code-behind file.
         '''</remarks>
-        Protected WithEvents cmdUpdateSettings As Global.System.Web.UI.WebControls.LinkButton
+        Protected WithEvents cmdUpdate As Global.System.Web.UI.WebControls.LinkButton
+
+        '''<summary>
+        '''cmdUpdateExit control.
+        '''</summary>
+        '''<remarks>
+        '''Auto-generated field.
+        '''To modify move field declaration from designer file to code-behind file.
+        '''</remarks>
+        Protected WithEvents cmdUpdateExit As Global.System.Web.UI.WebControls.LinkButton
 
         '''<summary>
         '''cmdCancel control.

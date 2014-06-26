@@ -1,19 +1,4 @@
 
-<p>
-[IFSOCIALMEMBERSHIPPENDING:Association Member]
-Hello pending member
-[/IFSOCIALMEMBERSHIPPENDING:Association Member]
-
-[IFSOCIALMEMBERSHIPAPPROVED:Association Member]
-Hello approved member
-[/IFSOCIALMEMBERSHIPAPPROVED:Association Member]
-
-[IFSOCIALMEMBERSHIPNONE:Association Member]
-Hello non-member
-[/IFSOCIALMEMBERSHIPNONE:Association Member]
-
-</p>
-
 <div class="dnnForm dnnClear">
 	
 	<div class="dnnFormItem dnnClear">
@@ -55,18 +40,6 @@ Hello non-member
 		[DNNLBL:USER:Password2:HideRequired]
 		[CTL:USER:Password2]
 		[REQUIRED:USER:Password2]
-	</div>
-
-	<div class="dnnFormItem dnnClear">
-		[DNNLBL:USER:PasswordQuestion:HideRequired]
-		[CTL:USER:PasswordQuestion]
-		[REQUIRED:USER:PasswordQuestion]
-	</div>
-
-	<div class="dnnFormItem dnnClear">
-		[DNNLBL:USER:PasswordAnswer:HideRequired]
-		[CTL:USER:PasswordAnswer]
-		[REQUIRED:USER:PasswordAnswer]
 	</div>
 
 	<ul class="dnnActions">
