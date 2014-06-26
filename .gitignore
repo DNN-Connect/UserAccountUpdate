@@ -156,3 +156,7 @@ $RECYCLE.BIN/
 obj/Release/Connect.Modules.AccountUpdate.xml
 obj/Release/Connect_AccountUpdate.vbproj.FileListAbsolute.txt
 *.cache
+*.dll
+*.pdb
+*.cache
+Resources.zip

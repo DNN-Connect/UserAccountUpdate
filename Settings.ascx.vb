@@ -1,6 +1,7 @@
 
 Imports DotNetNuke
 Imports DotNetNuke.Services.Exceptions
+Imports DotNetNuke.Entities.Users
 
 
 Namespace Connect.Modules.UserManagement.AccountUpdate
@@ -27,6 +28,17 @@ Namespace Connect.Modules.UserManagement.AccountUpdate
                     If (Settings.Contains("NotifyUser")) Then chkNotifyUser.Checked = CType(Settings("NotifyUser"), Boolean)
                     If (Settings.Contains("AddToRoleStatus")) Then drpRoleStatus.SelectedValue = CType(Settings("AddToRoleStatus"), String)
 
+                    If (Settings.Contains("CompareFirstNameLastName")) Then chkCompareFirstNameLastName.Checked = CType(Settings("CompareFirstNameLastName"), Boolean)
+                    If (Settings.Contains("ValidateEmailThroughRegex")) Then chkValidateEmailThroughRegex.Checked = CType(Settings("ValidateEmailThroughRegex"), Boolean)
+                    If Settings.Contains("EmailRegex") Then
+                        txtEmailRegex.Text = CType(Settings("EmailRegex"), String)
+                    Else
+                        Try
+                            txtEmailRegex.Text = UserController.GetUserSettings(PortalId)("Security_EmailValidation")
+                        Catch
+                        End Try
+                    End If
+
                 End If
             Catch exc As Exception           'Module failed to load
                 ProcessModuleLoadException(Me, exc)
@@ -48,6 +60,9 @@ Namespace Connect.Modules.UserManagement.AccountUpdate
                 objModules.UpdateTabModuleSetting(TabModuleId, "NotifyRole", drpNotifyRole.SelectedItem.Text)
                 objModules.UpdateTabModuleSetting(TabModuleId, "NotifyUser", chkNotifyUser.Checked.ToString)
                 objModules.UpdateTabModuleSetting(TabModuleId, "AddToRoleStatus", drpRoleStatus.SelectedValue)
+                objModules.UpdateTabModuleSetting(TabModuleId, "CompareFirstNameLastName", chkCompareFirstNameLastName.Checked.ToString)
+                objModules.UpdateTabModuleSetting(TabModuleId, "ValidateEmailThroughRegex", chkValidateEmailThroughRegex.Checked.ToString)
+                objModules.UpdateTabModuleSetting(TabModuleId, "EmailRegex", txtEmailRegex.Text)
 
             Catch exc As Exception           'Module failed to load
                 ProcessModuleLoadException(Me, exc)

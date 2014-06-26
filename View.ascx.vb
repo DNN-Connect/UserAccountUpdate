@@ -176,6 +176,13 @@ Namespace Connect.Modules.UserManagement.AccountUpdate
                 End If
             End If
 
+            If CompareFirstNameLastName AndAlso (blnUpdateFirstname And blnUpdateLastname) Then
+                If txtLastName.Text.ToLower.Trim = txtFirstName.Text.ToLower.Trim Then
+                    strMessages.Add("Error_LastnameLikeFirstname")
+                    AddErrorIndicator(Constants.User_Firstname, plhProfile)
+                End If
+            End If
+
             Dim txtDisplayName As TextBox = CType(FindControlRecursive(plhProfile, plhProfile.ID & "_" & Constants.ControlId_Displayname), TextBox)
             blnUpdateDisplayname = (Not txtDisplayName Is Nothing)
 
