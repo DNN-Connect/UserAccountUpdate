@@ -9,6 +9,17 @@
 	<h3>Release Notes</h3>
 
 	<p class="Owner">
+		<b>Version 01.02.01</b><br /><br />
+	</p>
+	<p>Minor Release</p>	
+	<ul>
+		<li>Added setting for regular expresion on e-mail validation (https://github.com/DNN-Connect/UserAccountRegistration/issues/3)</li>
+		<li>Added setting for comparing lastname with firstname (https://github.com/DNN-Connect/UserAccountRegistration/issues/2)</li>
+		<li>FIX: Save Template & Exit does not exit (https://github.com/DNN-Connect/UserAccountRegistration/issues/5)</li>
+	</ul>
+
+	<h4>Changes</h4>
+	<p class="Owner">
 		<b>Version 01.02.00</b><br /><br />
 	</p>
 	<p>Extended Token Support</p>	
