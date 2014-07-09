@@ -166,11 +166,7 @@
     <Content Include="Settings.ascx" />
     <Content Include="Templates\Default\Email.Admin.txt" />
     <Content Include="Templates\Default\Email.User.txt" />
-    <Content Include="Templates\Default\Form - Copy.txt" />
     <Content Include="Templates\Default\Form.txt" />
-    <Content Include="Templates\ManagePassword\Email.Admin.txt" />
-    <Content Include="Templates\ManagePassword\Email.User.txt" />
-    <Content Include="Templates\ManagePassword\Form.txt" />
     <Content Include="View.ascx" />
     <Content Include="ReleaseNotes.txt" />
     <Content Include="License.txt" />

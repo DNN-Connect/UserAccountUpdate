@@ -158,9 +158,17 @@ txtEmailAdmin control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Connect.Modules.UserManagement.AccountUpdate.Templates.cmdUpdateSettings">
+</member><member name="F:Connect.Modules.UserManagement.AccountUpdate.Templates.cmdUpdate">
 	<summary>
-cmdUpdateSettings control.
+cmdUpdate control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Connect.Modules.UserManagement.AccountUpdate.Templates.cmdUpdateExit">
+	<summary>
+cmdUpdateExit control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -329,6 +337,54 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:Connect.Modules.UserManagement.AccountUpdate.Settings.txtInterface">
 	<summary>
 txtInterface control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Connect.Modules.UserManagement.AccountUpdate.Settings.lblCompareFirstNameLastName">
+	<summary>
+lblCompareFirstNameLastName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Connect.Modules.UserManagement.AccountUpdate.Settings.chkCompareFirstNameLastName">
+	<summary>
+chkCompareFirstNameLastName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Connect.Modules.UserManagement.AccountUpdate.Settings.lblValidateEmailThroughRegex">
+	<summary>
+lblValidateEmailThroughRegex control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Connect.Modules.UserManagement.AccountUpdate.Settings.chkValidateEmailThroughRegex">
+	<summary>
+chkValidateEmailThroughRegex control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Connect.Modules.UserManagement.AccountUpdate.Settings.lblEmailRegex">
+	<summary>
+lblEmailRegex control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Connect.Modules.UserManagement.AccountUpdate.Settings.txtEmailRegex">
+	<summary>
+txtEmailRegex control.
 </summary>
 	<remarks>
 Auto-generated field.
