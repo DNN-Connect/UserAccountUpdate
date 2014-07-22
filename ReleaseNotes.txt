@@ -9,15 +9,17 @@
 	<h3>Release Notes</h3>
 
 	<p class="Owner">
-		<b>Version 01.02.02</b><br /><br />
+		<b>Version 01.02.02</b>
 	</p>
 	<p>Minor Release</p>	
 	<ul>
-		<li>Moved license from BSD to GPLv2</li>
+		<li>moved license from BSD to GPLv2</li>
+		<li>removed unneeded SPROCs</li>
+		<li>interface specification should be Class, Assembly (https://github.com/DNN-Connect/UserAccountRegistration/issues/9)</li>
 	</ul>
 
 	<p class="Owner">
-		<b>Version 01.02.01</b><br /><br />
+		<b>Version 01.02.01</b>
 	</p>
 	<p>Minor Release</p>	
 	<ul>
@@ -28,7 +30,7 @@
 
 	<h4>Changes</h4>
 	<p class="Owner">
-		<b>Version 01.02.00</b><br /><br />
+		<b>Version 01.02.00</b>
 	</p>
 	<p>Extended Token Support</p>	
 	<h4>Changes</h4>
@@ -44,7 +46,7 @@
 	</ul>
 
 	<p class="Owner">
-		<b>Version 01.00.01</b><br /><br />
+		<b>Version 01.00.01</b>
 	</p>
 	<p>Service release. Mainly focused on better support for password management in newer dnn installations where password retrieval is disabled.</p>	
 	<h4>Changes</h4>
@@ -54,7 +56,7 @@
 	</ul>
 
 	<p class="Owner">
-		<b>Version 01.00.00</b><br /><br />
+		<b>Version 01.00.00</b>
 	</p>
 	<p>Initial release of Account registration, login and update module. The formly module dnnWerk.Users has been separated into dedocated modules for registering and updating account. The main task for this release was to extract the actual modules from the original package. I do have improved the feature set in various ways though:</p>
 	
