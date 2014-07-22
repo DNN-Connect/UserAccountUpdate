@@ -3,7 +3,7 @@
     <package name="Connect AccountUpdateForm" type="Module" version="01.02.02">
       <friendlyName>Connect: AccountUpdate</friendlyName>
       <description>A community module that handles account updates in DNN</description>
-      <iconFile>Images/icon_extensions.gif</iconFile>
+      <iconFile>Desktopmodules/Connect/AccountUpdate/Images/icnModule.png</iconFile>
       <owner>
         <name>Philipp Becker</name>
         <organization>DNN-Connect</organization>
