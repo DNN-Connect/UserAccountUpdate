@@ -1,0 +1,34 @@
+
+<p>
+    Dear [DISPLAYNAME],
+</p>
+<p>
+    your account on the [PORTALNAME] website has been updated sucessfully and this notification 
+    is to confirm that everything went OK. IN case you haven't updated your profile this means 
+    someone else update your account data. In that case we urge you to log on to your account, 
+    verify what happened and possibly let us know about the issue. We'll be glad to assist if 
+    your account has been compromised.
+</p>
+
+<table>
+    <tr>
+        <td>Website URL</td>
+        <td><a href="http://[PORTALURL]">[PORTALURL]</a></td>
+    </tr>
+    <tr>
+        <td>Your Username:</td>
+        <td>[USERNAME]</td>
+    </tr>
+    <tr>
+        <td>Your Password:</td>
+        <td>[PASSWORD]</td>
+    </tr> 
+    <tr>
+        <td>Details updated:</td>
+        <td>[UPDATED]</td>
+    </tr>            
+</table>
+<p>
+    Best wishes and have a great day!
+</p>    
+

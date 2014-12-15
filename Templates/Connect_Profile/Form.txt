@@ -1,0 +1,132 @@
+
+<div class="dnnForm dnnClear" id="connectEditContainerProfile">
+	
+	<p>Account data. Changing your e-mail address requires re-logging on to the site after updating the account.</p>
+	<div class="dnnFormItem dnnClear">
+		[DNNLBL:USER:Email:HideRequired]
+		[CTL:USER:Email]
+		[REQUIRED:USER:Email]
+	</div>
+
+	<div class="dnnFormItem dnnClear">
+		[DNNLBL:USER:Firstname:HideRequired]
+		[CTL:USER:Firstname]
+		[REQUIRED:USER:Firstname]
+	</div>
+
+	<div class="dnnFormItem dnnClear">
+		[DNNLBL:USER:Lastname:HideRequired]
+		[CTL:USER:Lastname]
+		[REQUIRED:USER:Lastname]
+	</div>
+
+	<div class="dnnFormItem dnnClear">
+		[DNNLBL:USER:Displayname:HideRequired]
+		[CTL:USER:Displayname]
+		[REQUIRED:USER:Displayname]
+	</div>
+
+	<p>Where do you come from? We are from all over the world, what about you?</p>
+	<div class="dnnFormItem dnnClear">
+		[DNNLBL:PROFILE:Country:HideRequired]
+		[CTL:PROFILE:Country]
+		<span class="visLessMargin">[CTL:VISIBILITY:Country]</span>
+		[REQUIRED:PROFILE:Country]
+	</div>
+
+	<div class="dnnFormItem dnnClear">
+		[DNNLBL:PROFILE:Street:HideRequired]
+		[CTL:PROFILE:Street]
+		[CTL:VISIBILITY:Street]
+		[REQUIRED:PROFILE:Street]
+	</div>
+
+	<div class="dnnFormItem dnnClear">
+		[DNNLBL:PROFILE:PostalCode:HideRequired]
+		[CTL:PROFILE:PostalCode]
+		[CTL:VISIBILITY:PostalCode]
+		[REQUIRED:PROFILE:PostalCode]
+	</div>
+
+	<div class="dnnFormItem dnnClear">
+		[DNNLBL:PROFILE:City:HideRequired]
+		[CTL:PROFILE:City]
+		[CTL:VISIBILITY:City]
+		[REQUIRED:PROFILE:City]
+	</div>
+
+	<div class="dnnFormItem dnnClear">
+		[DNNLBL:PROFILE:PreferredTimeZone:HideRequired]
+		[CTL:PROFILE:PreferredTimeZone]
+		<span class="visLessMargin">[CTL:VISIBILITY:PreferredTimeZone]</span>
+		[REQUIRED:PROFILE:PreferredTimeZone]
+	</div>
+
+	<p>Tell others about yourself. Your story is showed on your public profile.</p>
+	<div class="dnnFormItem dnnClear">
+		[DNNLBL:PROFILE:Biography:HideRequired]
+		[CTL:PROFILE:Biography]
+		[CTL:VISIBILITY:Biography]
+		[REQUIRED:PROFILE:Biography]
+	</div>
+
+	<p>Where can you be found on the web?</p>
+		<div class="dnnFormItem dnnClear">
+			[DNNLBL:PROFILE:Facebook:HideRequired]
+			[CTL:PROFILE:Facebook]
+			[CTL:VISIBILITY:Facebook]
+		</div>
+
+		<div class="dnnFormItem dnnClear">
+			[DNNLBL:PROFILE:Twitter:HideRequired]
+			[CTL:PROFILE:Twitter]
+			[CTL:VISIBILITY:Twitter]
+		</div>
+
+		<div class="dnnFormItem dnnClear">
+			[DNNLBL:PROFILE:Google:HideRequired]
+			[CTL:PROFILE:Google]
+			[CTL:VISIBILITY:Google]
+		</div>
+
+		<div class="dnnFormItem dnnClear">
+			[DNNLBL:PROFILE:Skype:HideRequired]
+			[CTL:PROFILE:Skype]
+			[CTL:VISIBILITY:Skype]
+		</div>
+
+		<div class="dnnFormItem LinkedIn">
+			[DNNLBL:PROFILE:LinkedIn:HideRequired]
+			[CTL:PROFILE:LinkedIn]
+			[CTL:VISIBILITY:LinkedIn]
+		</div>
+
+		<div class="dnnFormItem dnnClear">
+			[DNNLBL:PROFILE:Website:HideRequired]
+			[CTL:PROFILE:Website]
+			[CTL:VISIBILITY:Website]
+		</div>
+	
+	<p>Can we or others give you call?</p>
+		<div class="dnnFormItem dnnClear">
+			[DNNLBL:PROFILE:Telephone:HideRequired]
+			[CTL:PROFILE:Telephone]
+			[CTL:VISIBILITY:Telephone]
+		</div>
+		<div class="dnnFormItem dnnClear">
+			[DNNLBL:PROFILE:Cell:HideRequired]
+			[CTL:PROFILE:Cell]
+			[CTL:VISIBILITY:Cell]
+		</div>
+		<div class="dnnFormItem dnnClear">
+			[DNNLBL:PROFILE:Fax:HideRequired]
+			[CTL:PROFILE:Fax]
+			[CTL:VISIBILITY:Fax]
+		</div>
+
+	<ul class="dnnActions">
+	  <li>[CTL:UPDATEBUTTON:UpdateAccount]</li>
+	  <li>[CTL:DELETEBUTTON:DeleteAccount]</li>
+	</ul>
+
+</div>

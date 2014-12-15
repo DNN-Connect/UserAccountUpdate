@@ -182,6 +182,46 @@ cmdCancel control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:Connect.Modules.UserManagement.AccountUpdate.View.pnlError">
+	<summary>
+pnlError control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Connect.Modules.UserManagement.AccountUpdate.View.lblError">
+	<summary>
+lblError control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Connect.Modules.UserManagement.AccountUpdate.View.pnlSuccess">
+	<summary>
+pnlSuccess control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Connect.Modules.UserManagement.AccountUpdate.View.lblSucess">
+	<summary>
+lblSucess control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Connect.Modules.UserManagement.AccountUpdate.View.plhProfile">
+	<summary>
+plhProfile control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:Connect.Modules.UserManagement.AccountUpdate.Settings.lblUsernameMode">
 	<summary>
 lblUsernameMode control.
@@ -385,46 +425,6 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:Connect.Modules.UserManagement.AccountUpdate.Settings.txtEmailRegex">
 	<summary>
 txtEmailRegex control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Connect.Modules.UserManagement.AccountUpdate.View.pnlError">
-	<summary>
-pnlError control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Connect.Modules.UserManagement.AccountUpdate.View.lblError">
-	<summary>
-lblError control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Connect.Modules.UserManagement.AccountUpdate.View.pnlSuccess">
-	<summary>
-pnlSuccess control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Connect.Modules.UserManagement.AccountUpdate.View.lblSucess">
-	<summary>
-lblSucess control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Connect.Modules.UserManagement.AccountUpdate.View.plhProfile">
-	<summary>
-plhProfile control.
 </summary>
 	<remarks>
 Auto-generated field.

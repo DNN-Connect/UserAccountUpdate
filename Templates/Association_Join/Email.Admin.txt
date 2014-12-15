@@ -1,0 +1,17 @@
+
+<p>A DNN-Connect member has join the association</p>
+<table>
+    <tr>
+        <td>UserId:</td><td>[USERID]</td>
+    </tr> 
+    <tr>
+        <td>Username:</td><td>[USERNAME]</td>
+    </tr>
+    <tr>
+        <td>Full Name:</td><td>[FIRSTNAME] [LASTNAME]</td>
+    </tr> 
+    <tr>
+        <td>View User Details:</td><td>[USERURL]</td>
+    </tr>                
+</table> 
+
