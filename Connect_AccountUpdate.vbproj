@@ -156,6 +156,7 @@
     <None Include="BuildScripts\MSBuild.Community.Tasks.Targets" />
     <Content Include="Templates.ascx" />
     <None Include="Connect_AccountUpdate.dnn" />
+    <Content Include="Providers\DataProviders\SqlDataProvider\01.02.03.SqlDataProvider" />
     <None Include="Providers\DataProviders\SqlDataProvider\01.00.00.SqlDataProvider" />
     <None Include="Providers\DataProviders\SqlDataProvider\Uninstall.SqlDataProvider" />
   </ItemGroup>
@@ -187,7 +188,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>62597</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
