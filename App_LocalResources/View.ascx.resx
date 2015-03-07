@@ -151,10 +151,10 @@
     <value>You must provide a displayname!</value>
   </data>
   <data name="Error_MissingFirstname.Text" xml:space="preserve">
-    <value>You must provide your firstname!</value>
+    <value>You must provide your first name!</value>
   </data>
   <data name="Error_MissingLastname.Text" xml:space="preserve">
-    <value>You must provide your lastname!</value>
+    <value>You must provide your last name!</value>
   </data>
   <data name="Error_MissingPassword.Text" xml:space="preserve">
     <value>You must provide the password two times!</value>
@@ -175,10 +175,10 @@
     <value>You must fill in all required fields</value>
   </data>
   <data name="Firstname.Help" xml:space="preserve">
-    <value>Enter your firstname</value>
+    <value>Enter your first name</value>
   </data>
   <data name="Firstname.Text" xml:space="preserve">
-    <value>Firstname: </value>
+    <value>First name: </value>
   </data>
   <data name="InvalidPassword.Text" xml:space="preserve">
     <value>The selected password does not meet our password policy. {0}</value>
@@ -187,10 +187,10 @@
     <value>This username is not valid. Most likely it has been taken already.</value>
   </data>
   <data name="Lastname.Help" xml:space="preserve">
-    <value>Enter your lastname</value>
+    <value>Enter your last name</value>
   </data>
   <data name="Lastname.Text" xml:space="preserve">
-    <value>Lastname:</value>
+    <value>Last name:</value>
   </data>
   <data name="ManageTemplates.Action" xml:space="preserve">
     <value>Manage Templates</value>
